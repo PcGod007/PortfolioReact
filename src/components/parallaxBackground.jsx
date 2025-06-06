@@ -19,7 +19,7 @@ const ParallaxBackground = () => {
         <div
           className="absolute inset-0 -z-40"
           style={{
-            backgroundImage: "url(/assets/Packs/Ocean/1.png)",
+            backgroundImage: "url(/PortfolioReact/assets/Packs/Ocean/1.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: layer1Y,
@@ -29,7 +29,7 @@ const ParallaxBackground = () => {
         <motion.div
           className="absolute inset-0 -z-30"
           style={{
-            backgroundImage: "url(/assets/Packs/Ocean/2.png)",
+            backgroundImage: "url(/PortfolioReact/assets/Packs/Ocean/2.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: layer2Y,
@@ -39,7 +39,7 @@ const ParallaxBackground = () => {
         <motion.div
           className="absolute inset-0 -z-20"
           style={{
-            backgroundImage: "url(/assets/Packs/Ocean/3.png)",
+            backgroundImage: "url(/PortfolioReact/assets/Packs/Ocean/3.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: layer3Y,
@@ -49,7 +49,7 @@ const ParallaxBackground = () => {
         <motion.div
           className="absolute inset-0 -z-10"
           style={{
-            backgroundImage: "url(/assets/Packs/Ocean/4.png)",
+            backgroundImage: "url(/PortfolioReact/assets/Packs/Ocean/4.png)",
             backgroundPosition: "bottom",
             backgroundSize: "cover",
             y: layer4Y,
