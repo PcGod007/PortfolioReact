@@ -4,6 +4,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/my-portfolio/", // 👈 Add this line (your repo name with slashes)
+  base: "https://pcgod007.github.io/PortfolioReact/", // Repo
   plugins: [react(), tailwindcss()],
 });
