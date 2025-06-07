@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { useState } from "react";
 
 const ProjectDetails = ({
   title,
@@ -7,18 +8,31 @@ const ProjectDetails = ({
   image,
   tags,
   href,
-  playHref, 
+  playHref,
   closeModal,
 }) => {
+  const [isClosing, setIsClosing] = useState(false);
+
+  const handleClose = () => {
+    setIsClosing(true);
+  };
+
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm">
+    <div
+      className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm"
+      onClick={handleClose}
+    >
       <motion.div
-        className="relative max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
+        className="relative max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
         initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
+        animate={isClosing ? { opacity: 0, scale: 0.65 } : { opacity: 1, scale: 1 }}
+        onClick={(e) => e.stopPropagation()}
+        onAnimationComplete={() => {
+          if (isClosing) closeModal();
+        }}
       >
         <button
-          onClick={closeModal}
+          onClick={handleClose}
           className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
         >
           <img src="assets/close.svg" className="w-6 h-6" />
@@ -48,9 +62,8 @@ const ProjectDetails = ({
               ))}
             </div>
 
-            {/* Links Section */}
             <div className="flex flex-col items-end gap-2">
-              {href ? (
+              {href && (
                 <a
                   href={href}
                   target="_blank"
@@ -59,9 +72,9 @@ const ProjectDetails = ({
                 >
                   View Project <img src="assets/arrow-up.svg" className="size-4" />
                 </a>
-              ) : null}
+              )}
 
-              {playHref ? (
+              {playHref && (
                 <a
                   href={playHref}
                   target="_blank"
@@ -70,7 +83,7 @@ const ProjectDetails = ({
                 >
                   Play <img src="assets/controller.svg" className="size-9" />
                 </a>
-              ) : null}
+              )}
             </div>
           </div>
         </div>

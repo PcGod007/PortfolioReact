@@ -13,6 +13,8 @@
 @media (max-width: 768px) {
   .blob-wrapper {
     margin: 0 auto; /* center horizontally */
+    width: 380px;
+    height: 380px;
   }
 }
 
