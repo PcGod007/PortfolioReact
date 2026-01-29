@@ -14,12 +14,12 @@ const About = () => {
         <div className="flex items-end grid-default-color grid-1">
           <img
             src="assets/coding-me.png"
-            className="absolute scale-[1.00] -right-[8rem] -top-[0rem] md:scale-[2] md:left-50 md:inset-y-40 lg:scale-[1.65] lg:top-30"
+            className="absolute scale-[1.00] -right-[8rem] -top-[0rem] md:scale-[2] md:left-22 md:inset-y-40 lg:scale-[1.30] lg:top-10"
           />
           <div className="z-10">
             <p className="headtext">Hi, I'm Pranav C</p>
             <p className="subtext">
-              I am passionate about <b>Data Logistics</b> that help creating easy to access data interfaces and help with validation of data. Involving with <b>AI and Creating Chatbots</b> that help Specific Goals. Enthusiastic <b>UI/UX Developer</b> and I enjoy designing of Web Pages.
+              I am passionate about <b>Data Logistics</b> that create intuitive, reliable, and easily accessible data interfaces while ensuring strong data validation practices. I work at the intersection of <b>SAP, Generative AI, and Agentic AI</b>, designing intelligent systems and chatbots tailored to solve specific enterprise goals. I focus on integrating <b>Deep Learning and LLM-driven architectures</b> into enterprise applications, bridging traditional platforms with modern AI capabilities. I am also an enthusiastic <b>UI/UX Developer</b> who enjoys crafting clean, interactive web experiences that make complex systems simple for users.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />

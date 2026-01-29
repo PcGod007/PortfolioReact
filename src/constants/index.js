@@ -220,6 +220,43 @@ export const myProjects = [
   },
   {
     id: 7,
+    title: "Multiplayer Poker Game with AI Opponents",
+    description:
+      "A fully functional web-based Poker game featuring multiplayer gameplay on a single device and intelligent AI opponents with varying difficulty levels.",
+    subDescription: [
+      "I designed and developed a complete Poker game environment with realistic table layout, player orientations, betting system, and proper hand evaluation logic.",
+      "The application supports multiplayer gameplay on a single device along with AI-driven opponents that simulate different playing strategies and difficulty levels.",
+      "I implemented game logic for card distribution, hand ranking, betting rounds, and win evaluation to closely mirror real Poker rules.",
+      "This project enhanced my skills in full-stack development, game logic design, AI behavior modeling, and interactive UI development."
+    ],
+    href: "",
+    logo: "",
+    image: "./assets/projects/poker.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "./assets/logos/python.svg",
+      },
+      {
+        id: 2,
+        name: "React",
+        path: "./assets/logos/react.svg",
+      },
+      {
+        id: 3,
+        name: "LLM",
+        path: "./assets/logos/LLM1.svg",
+      },
+      {
+        id: 4,
+        name: "NLP",
+        path: "./assets/logos/nlp.svg",
+      }
+    ]
+  },
+  {
+    id: 8,
     title: "Fingerprint Recognition System",
     description:
       "A secure fingerprint matcher using BLAKE2, salting, and HMAC for tamper-resistant authentication.",
@@ -251,7 +288,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Earthquake Detector",
     description:
       "Designed a vibration-based Earthquake Detector using Arduino and C to monitor seismic activity with real-time alerts.",
@@ -300,7 +337,7 @@ export const mySocials = [
 export const experiences = [
   {
     title: "Computer Science Student & Enthusiast",
-    date: "2019-2021",
+    date: "2019 - 2021",
     job: "School Student",
     contents: [
       "A start of my journey towards the field of computer science, I enjoyed learning Python and its applications across different use cases.",
@@ -313,7 +350,7 @@ export const experiences = [
   {
     title: "Computer Science & Engineering",
     job: "Freshman at College",
-    date: "2021-2023",
+    date: "2021 - 2023",
     contents: [
       "My college journey began amidst the challenges of the COVID-impacted first semester, which I successfully navigated with a strong GPA while also completing a few certificate courses on LinkedIn.",
       "The second semester introduced exciting and demanding subjects like Electronics and Object-Oriented Programming.",
@@ -325,7 +362,7 @@ export const experiences = [
   {
     title: "Computer Science & Engineering",
     job: "Senior Year at College",
-    date: "2023-2024",
+    date: "2023 - 2024",
     contents: [
       "In my senior year, I focused on building impactful technical projects across various domains.",
       "I developed an Arduino-based Earthquake Detector and a secure Fingerprint Recognition system using cryptographic techniques like Blake2, HMAC, and salting.",
@@ -338,15 +375,28 @@ export const experiences = [
   {
     title: "Computer Science & Engineering",
     job: "Final Year at College",
-    date: "2024-2025",
+    date: "2024 - 2025",
     contents: [
       "In my final year, I pursued the Microsoft DP-900 Certification to deepen my understanding of Microsoft’s data analysis tools.",
       "I gained insights into Generative AI, Machine Learning, and Deep Learning through an AWS-led global summit.",
       "As a part of my coding club, I strengthened my skills in Java and Competitive Programming, learning faster and optimized approaches to problem-solving.",
       "I worked on impactful projects like a Blockchain-based Student Certificate Validator and explored Human-Computer Interaction through interface design.",
       "My most significant milestone was being selected as a Project Trainee at BOSCH, where I successfully trained functional Text-to-Text and Text-to-Video models using LLMs on BOSCH-specific datasets.",
-      "One of my recent projects that I've worked on is A Microtransaction Fraud Risk Assessment Tool that helps detect fraudulent transactions over transactions values less than $5 by utilizing specialized parameters catered to lesser value tranasactions."
+      "One of my recent projects that I've worked on is A Microtransaction Fraud Risk Assessment Tool that helps detect fraudulent transactions over transactions values less than $5 by utilizing specialized parameters catered to lesser value transactions."
     ],
+  },
+  {
+    title: "Data Analyst @ Deloitte",
+    job: "Professional Experience",
+    date: "2025 - Present",
+    contents: [
+      "Working as a Data Analyst at Deloitte, contributing across SAP ecosystems, Generative AI solutions, and enterprise data-driven applications.",
+      "Earned double SAP certifications, strengthening my expertise in SAP systems and business process integration.",
+      "Actively involved in implementing Generative AI within SAP applications using Deep Learning models and LLM-driven architectures.",
+      "Designing and building Agentic AI systems and intelligent agents that automate workflows and enhance decision-making processes.",
+      "Collaborating on cross-functional projects that combine SAP, AI, and data analytics to deliver scalable enterprise solutions.",
+      "Continuously exploring advanced AI paradigms to bridge traditional enterprise systems with modern AI capabilities."
+    ]
   },
 ];
 export const reviews = [
