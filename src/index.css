@@ -105,6 +105,15 @@ body {
 .grid-1 {
   @apply row-span-2 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }
+
+.grid-1 .headtext {
+  @apply text-lg md:text-xl;
+}
+
+.grid-1 .subtext {
+  @apply text-xs md:text-sm lg:text-base line-clamp-none md:line-clamp-none overflow-y-auto max-h-[calc(15rem-5rem)] md:max-h-none;
+}
+
 .grid-2 {
   @apply row-span-1 md:col-span-3 h-[15rem] md:h-full relative overflow-hidden hover:-translate-y-1 duration-200;
 }

@@ -12,11 +12,21 @@ export const Timeline = ({ data }) => {
       const rect = ref.current.getBoundingClientRect();
       setHeight(rect.height);
     }
+
+    const handleResize = () => {
+      if (ref.current) {
+        const rect = ref.current.getBoundingClientRect();
+        setHeight(rect.height);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, [ref]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start start", "end end"],
+    offset: ["start 0%", "end 100%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
