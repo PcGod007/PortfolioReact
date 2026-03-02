@@ -19,11 +19,11 @@ const ProjectDetails = ({
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center w-full h-full overflow-hidden backdrop-blur-sm p-4"
       onClick={handleClose}
     >
       <motion.div
-        className="relative max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10"
+        className="relative max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl border shadow-sm rounded-2xl bg-gradient-to-l from-midnight to-navy border-white/10 max-h-[90vh] overflow-y-auto"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={isClosing ? { opacity: 0, scale: 0.65 } : { opacity: 1, scale: 1 }}
         onClick={(e) => e.stopPropagation()}
@@ -33,7 +33,7 @@ const ProjectDetails = ({
       >
         <button
           onClick={handleClose}
-          className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500"
+          className="absolute p-2 rounded-sm top-5 right-5 bg-midnight hover:bg-gray-500 z-10"
         >
           <img src="assets/close.svg" className="w-6 h-6" />
         </button>
@@ -50,7 +50,7 @@ const ProjectDetails = ({
             </p>
           ))}
 
-          <div className="flex items-center justify-between mt-4">
+          <div className="flex flex-col items-center justify-between gap-4 mt-4 sm:flex-row sm:items-end">
             <div className="flex gap-3">
               {tags.map((tag) => (
                 <img
@@ -62,7 +62,7 @@ const ProjectDetails = ({
               ))}
             </div>
 
-            <div className="flex flex-col items-end gap-2">
+            <div className="flex flex-col items-center gap-2 sm:items-end">
               {href && (
                 <a
                   href={href}

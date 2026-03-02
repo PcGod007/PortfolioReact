@@ -172,3 +172,28 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #1f1e39, #4f8dff);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #4f8dff, #1f1e39);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-color: #4f8dff transparent;
+  scrollbar-width: thin;
+}
+

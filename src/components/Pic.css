@@ -1,6 +1,6 @@
 .blob-wrapper {
-  width: 450px;
-  height: 450px;
+  width: 550px;
+  height: 550px;
   margin-left: auto;
   margin-right: 70px;
   display: flex;
@@ -9,12 +9,30 @@
   animation: floatBlob 6s ease-in-out infinite alternate;
 }
 
-/* Responsive fix for mobile */
+/* Responsive fix for tablets */
 @media (max-width: 768px) {
   .blob-wrapper {
     margin: 0 auto; /* center horizontally */
+    width: 460px;
+    height: 460px;
+  }
+}
+
+/* Responsive fix for small phones */
+@media (max-width: 640px) {
+  .blob-wrapper {
+    margin: 0 auto;
     width: 380px;
     height: 380px;
+  }
+}
+
+/* Responsive fix for extra small phones */
+@media (max-width: 480px) {
+  .blob-wrapper {
+    margin: 0 auto;
+    width: 330px;
+    height: 330px;
   }
 }
 
