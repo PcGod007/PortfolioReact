@@ -150,6 +150,44 @@ export const myProjects = [
   },
   {
     id: 5,
+    title: "Bugatti La Voiture Noire - AI-Powered Frontend Design",
+    description:
+      "A cutting-edge frontend webpage showcasing the synergy of AI and sustainable web design, featuring AI-generated 3D car models and interactive aerodynamics simulation.",
+    subDescription: [
+      "This project demonstrates the advanced capabilities of AI in frontend web design, leveraging Antigravity, Flow, Whisk, and AI tools to create a visually stunning and functionally robust website.",
+      "The centerpiece is an AI-generated 3D model of the Bugatti La Voiture Noire, created from a single static image. The car rendering and engine opening animations were entirely AI-generated, showcasing the potential of generative models.",
+      "I transformed the AI-generated assets into a fully functional 3D model integrated into the webpage, enabling dynamic visualization of the vehicle with real-time rendering capabilities.",
+      "The Aerodynamics Section features an interactive 'Discover Engineering' button that enables users to visualize wind displacement and vehicle positioning in 3D space, demonstrating advanced engineering principles through web technology.",
+      "This project exemplifies how AI and modern frontend technologies can work together to create immersive, sustainable, and extensible web designs that balance aesthetics with functionality."
+    ],
+    href: "https://pc-bugatti-la-voiture-noire.netlify.app/",
+    logo: "",
+    image: "./assets/projects/bugatti.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Antigravity",
+        path: "./assets/logos/antigravity.svg",
+      },
+      {
+        id: 2,
+        name: "Flow",
+        path: "./assets/logos/Flow.svg",
+      },
+      {
+        id: 3,
+        name: "Whisk",
+        path: "./assets/logos/whisk.svg",
+      },
+      {
+        id: 4,
+        name: "AI",
+        path: "./assets/logos/neural.svg",
+      },
+    ],
+  },
+  {
+    id: 6,
     title: "AI Stock Market Predictor",
     description:
       "A neural network-based model that forecasts stock trends using historical market data.",
@@ -187,7 +225,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Botify: A Q&A Chatbot",
     description:
       "A domain-specific chatbot that uses NLP to answer user queries based on structured data.",
@@ -219,7 +257,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Multiplayer Poker Game with AI Opponents",
     description:
       "A fully functional web-based Poker game featuring multiplayer gameplay on a single device and intelligent AI opponents with varying difficulty levels.",
@@ -256,7 +294,7 @@ export const myProjects = [
     ]
   },
   {
-    id: 8,
+    id: 9,
     title: "Fingerprint Recognition System",
     description:
       "A secure fingerprint matcher using BLAKE2, salting, and HMAC for tamper-resistant authentication.",
@@ -288,7 +326,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     title: "Earthquake Detector",
     description:
       "Designed a vibration-based Earthquake Detector using Arduino and C to monitor seismic activity with real-time alerts.",
@@ -311,44 +349,6 @@ export const myProjects = [
         id: 2,
         name: "C",
         path: "./assets/logos/c.svg",
-      },
-    ],
-  },
-  {
-    id: 10,
-    title: "Bugatti La Voiture Noire - AI-Powered Frontend Design",
-    description:
-      "A cutting-edge frontend webpage showcasing the synergy of AI and sustainable web design, featuring AI-generated 3D car models and interactive aerodynamics simulation.",
-    subDescription: [
-      "This project demonstrates the advanced capabilities of AI in frontend web design, leveraging Antigravity, Flow, Whisk, and AI tools to create a visually stunning and functionally robust website.",
-      "The centerpiece is an AI-generated 3D model of the Bugatti La Voiture Noire, created from a single static image. The car rendering and engine opening animations were entirely AI-generated, showcasing the potential of generative models.",
-      "I transformed the AI-generated assets into a fully functional 3D model integrated into the webpage, enabling dynamic visualization of the vehicle with real-time rendering capabilities.",
-      "The Aerodynamics Section features an interactive 'Discover Engineering' button that enables users to visualize wind displacement and vehicle positioning in 3D space, demonstrating advanced engineering principles through web technology.",
-      "This project exemplifies how AI and modern frontend technologies can work together to create immersive, sustainable, and extensible web designs that balance aesthetics with functionality."
-    ],
-    href: "https://pc-bugatti-la-voiture-noire.netlify.app/",
-    logo: "",
-    image: "./assets/projects/bugatti.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Antigravity",
-        path: "./assets/logos/antigravity.svg",
-      },
-      {
-        id: 2,
-        name: "Flow",
-        path: "./assets/logos/Flow.svg",
-      },
-      {
-        id: 3,
-        name: "Whisk",
-        path: "./assets/logos/whisk.svg",
-      },
-      {
-        id: 4,
-        name: "AI",
-        path: "./assets/logos/neural.svg",
       },
     ],
   },
