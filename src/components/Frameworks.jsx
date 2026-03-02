@@ -22,18 +22,21 @@ export function Frameworks() {
     "yolo",
     "opencv1",
     "c",
-    "sap"
+    "sap",
+    "antigravity",
+    "Flow",
+    "whisk"
   ];
 
   return (
     <div className="relative flex h-[550px] w-[230px] flex-col items-center justify-center">
-      <OrbitingCircles iconSize={42} radius={180}>
+      <OrbitingCircles iconSize={36} radius={180}>
         {skills.map((skill, index) => (
           <Icon key={index} src={`assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>
 
-      <OrbitingCircles iconSize={28} radius={120} reverse speed={2} startAngle={15}>
+      <OrbitingCircles iconSize={24} radius={120} reverse speed={2} startAngle={15}>
         {skills.slice().reverse().map((skill, index) => (
           <Icon key={index} src={`assets/logos/${skill}.svg`} />
         ))}
