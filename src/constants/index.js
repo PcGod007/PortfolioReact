@@ -495,3 +495,4 @@ export const reviews = [
     img: "ri-link-m",
   },
 ];
+
