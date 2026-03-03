@@ -1,5 +1,81 @@
 export const myProjects = [
   {
+    id: 6,
+    title: "AI Stock Market Predictor",
+    description:
+      "A neural network-based web application that forecasts stock prices by combining historical data with real-world news and trend analysis in real time.",
+    subDescription: [
+      "This project predicts stock market trends using historical price fluctuations, technical indicators, and live news sentiment.",
+      "It employs Artificial Neural Networks (ANNs) trained on time-series market data and natural language analysis to identify buying/selling signals.",
+      "Users can interact with the live demo to input tickers and receive real-time predictions influenced by current events.",
+      "Built with Python for the backend model and a modern frontend; visualization and analysis use Matplotlib/Seaborn for offline review.",
+    ],
+    href: "https://pc-stockai.netlify.app/",
+    playHref: "",
+    logo: "",
+    image: "./assets/projects/stock.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Python",
+        path: "./assets/logos/python.svg",
+      },
+      {
+        id: 2,
+        name: "LLM",
+        path: "./assets/logos/LLM1.svg",
+      },
+      {
+        id: 3,
+        name: "Matplotlib",
+        path: "./assets/logos/matplot.svg",
+      },
+      {
+        id: 4,
+        name: "Neural Network",
+        path: "./assets/logos/neural.svg",
+      },
+    ],
+  },
+  {
+    id: 5,
+    title: "Bugatti La Voiture Noire - AI-Powered Frontend Design",
+    description:
+      "A cutting-edge frontend webpage showcasing the synergy of AI and sustainable web design, featuring AI-generated 3D car models and interactive aerodynamics simulation.",
+    subDescription: [
+      "This project demonstrates the advanced capabilities of AI in frontend web design, leveraging Antigravity, Flow, Whisk, and AI tools to create a visually stunning and functionally robust website.",
+      "The centerpiece is an AI-generated 3D model of the Bugatti La Voiture Noire, created from a single static image. The car rendering and engine opening animations were entirely AI-generated, showcasing the potential of generative models.",
+      "I transformed the AI-generated assets into a fully functional 3D model integrated into the webpage, enabling dynamic visualization of the vehicle with real-time rendering capabilities.",
+      "The Aerodynamics Section features an interactive 'Discover Engineering' button that enables users to visualize wind displacement and vehicle positioning in 3D space, demonstrating advanced engineering principles through web technology.",
+      "This project exemplifies how AI and modern frontend technologies can work together to create immersive, sustainable, and extensible web designs that balance aesthetics with functionality."
+    ],
+    href: "https://pc-bugatti-la-voiture-noire.netlify.app/",
+    logo: "",
+    image: "./assets/projects/bugatti.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "Antigravity",
+        path: "./assets/logos/antigravity.svg",
+      },
+      {
+        id: 2,
+        name: "Flow",
+        path: "./assets/logos/Flow.svg",
+      },
+      {
+        id: 3,
+        name: "Whisk",
+        path: "./assets/logos/whisk.svg",
+      },
+      {
+        id: 4,
+        name: "AI",
+        path: "./assets/logos/neural.svg",
+      },
+    ],
+  },
+  {
     id: 1,
     title: "Functional T2T AND T2V Chatbot for BOSCH",
     description:
@@ -148,82 +224,8 @@ export const myProjects = [
       },
     ],
   },
-  {
-    id: 5,
-    title: "Bugatti La Voiture Noire - AI-Powered Frontend Design",
-    description:
-      "A cutting-edge frontend webpage showcasing the synergy of AI and sustainable web design, featuring AI-generated 3D car models and interactive aerodynamics simulation.",
-    subDescription: [
-      "This project demonstrates the advanced capabilities of AI in frontend web design, leveraging Antigravity, Flow, Whisk, and AI tools to create a visually stunning and functionally robust website.",
-      "The centerpiece is an AI-generated 3D model of the Bugatti La Voiture Noire, created from a single static image. The car rendering and engine opening animations were entirely AI-generated, showcasing the potential of generative models.",
-      "I transformed the AI-generated assets into a fully functional 3D model integrated into the webpage, enabling dynamic visualization of the vehicle with real-time rendering capabilities.",
-      "The Aerodynamics Section features an interactive 'Discover Engineering' button that enables users to visualize wind displacement and vehicle positioning in 3D space, demonstrating advanced engineering principles through web technology.",
-      "This project exemplifies how AI and modern frontend technologies can work together to create immersive, sustainable, and extensible web designs that balance aesthetics with functionality."
-    ],
-    href: "https://pc-bugatti-la-voiture-noire.netlify.app/",
-    logo: "",
-    image: "./assets/projects/bugatti.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Antigravity",
-        path: "./assets/logos/antigravity.svg",
-      },
-      {
-        id: 2,
-        name: "Flow",
-        path: "./assets/logos/Flow.svg",
-      },
-      {
-        id: 3,
-        name: "Whisk",
-        path: "./assets/logos/whisk.svg",
-      },
-      {
-        id: 4,
-        name: "AI",
-        path: "./assets/logos/neural.svg",
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: "AI Stock Market Predictor",
-    description:
-      "A neural network-based model that forecasts stock trends using historical market data.",
-    subDescription: [
-      "This project predicts stock market trends using historical price fluctuations and technical indicators.",
-      "It employs Artificial Neural Networks (ANNs) trained on time-series stock data to identify buying/selling signals.",
-      "Built using Python, leveraging TensorFlow/Keras, NumPy, and Pandas for data handling and model building.",
-      "Visualization and analysis were done with Matplotlib and Seaborn to compare real vs predicted outcomes.",
-    ],
-    href: "https://github.com/PcGod007/AI-Stock-Market-Predictor",
-    playHref: "",
-    logo: "",
-    image: "./assets/projects/stock.jpg",
-    tags: [
-      {
-        id: 1,
-        name: "Python",
-        path: "./assets/logos/python.svg",
-      },
-      {
-        id: 2,
-        name: "LLM",
-        path: "./assets/logos/LLM1.svg",
-      },
-      {
-        id: 3,
-        name: "Matplotlib",
-        path: "./assets/logos/matplot.svg",
-      },
-      {
-        id: 4,
-        name: "Neural Network",
-        path: "./assets/logos/neural.svg",
-      },
-    ],
-  },
+
+
   {
     id: 7,
     title: "Botify: A Q&A Chatbot",
@@ -404,7 +406,7 @@ export const experiences = [
     contents: [
       "In my senior year, I focused on building impactful technical projects across various domains.",
       "I developed an Arduino-based Earthquake Detector and a secure Fingerprint Recognition system using cryptographic techniques like Blake2, HMAC, and salting.",
-      "I also built Botify, a domain-specific Q&A chatbot, and applied neural networks for AI-driven stock market prediction using historical data.",
+      "I also built Botify, a domain-specific Q&A chatbot, and applied neural networks for AI-driven stock market prediction using historical data along with real-time news and trend analysis.",
       "To strengthen my technical and coding abilities, I joined the Google Developer Student Club (GDSC) at VIT Chennai as part of the Competitive Coding Team, where I honed my problem-solving and algorithmic thinking.",
       "To enhance my skills further, I completed certifications in Python, NumPy, R, Data Science, OCR, Apache Spark, and Excel-based data analysis.",
       "I later interned at Qualitest Pvt Ltd as a Data Automation Intern, where I contributed to building a scalable data extraction and testing framework. This phase helped consolidate my learning and apply it to real-world data engineering and analysis tasks."
