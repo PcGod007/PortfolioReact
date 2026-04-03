@@ -1,14 +1,15 @@
 export const myProjects = [
   {
     id: 6,
-    title: "AI Stock Market Predictor",
+    title: "StockAI",
     description:
-      "A neural network-based web application that forecasts stock prices by combining historical data with real-world news and trend analysis in real time.",
+      "A comprehensive AI-powered stock trading platform featuring real-time price prediction powered by neural networks, combined with an interactive Portfolio Simulator for hands-on learning.",
     subDescription: [
-      "This project predicts stock market trends using historical price fluctuations, technical indicators, and live news sentiment.",
-      "It employs Artificial Neural Networks (ANNs) trained on time-series market data and natural language analysis to identify buying/selling signals.",
-      "Users can interact with the live demo to input tickers and receive real-time predictions influenced by current events.",
-      "Built with Python for the backend model and a modern frontend; visualization and analysis use Matplotlib/Seaborn for offline review.",
+      "StockAI combines cutting-edge predictive analytics with an interactive Portfolio Simulator, enabling users to learn trading fundamentals while leveraging AI-driven predictions.",
+      "The AI prediction engine employs Artificial Neural Networks (ANNs) trained on time-series market data, technical indicators, and live news sentiment analysis to forecast stock price movements and identify optimal entry/exit signals.",
+      "The Portfolio Simulator allows users to practice trading in a risk-free environment, learning key concepts such as equity, call options, put options, intraday trading strategies, and portfolio management without real financial risk.",
+      "Users can simulate trades based on AI predictions, test different strategies, and gain practical insights into how options behave in various market conditions.",
+      "Built with Python for backend machine learning models and a modern frontend framework; features real-time visualization, technical analysis tools, and comprehensive market data integration.",
     ],
     href: "https://pc-stockai.netlify.app/",
     playHref: "",
