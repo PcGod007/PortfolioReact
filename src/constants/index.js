@@ -1,5 +1,83 @@
 export const myProjects = [
   {
+    id: 12,
+    title: "MyMacros",
+    description:
+      "A premium, mobile-first nutrition tracking app for Indian and international cuisines, featuring 550+ curated foods with AI-powered barcode scanning.",
+    subDescription: [
+      "MyMacros provides an extensive database of 550+ Indian and international foods with accurate nutritional data tailored to local dietary preferences.",
+      "Features a high-performance barcode scanner with 3-tier lookup: Local DB, Food Facts API, and AI deep research fallback for comprehensive coverage.",
+      "Includes personalized macro targets calculated using the Mifflin-St Jeor equation for accurate BMR/TDEE estimation based on user goals.",
+      "Built with Vanilla JavaScript (ES6+) for frontend SPA without frameworks, Node.js + Express backend, and MongoDB for data persistence.",
+      "Integrates Llama-3 AI models for sub-second inference to automatically scrape and structure nutritional data when traditional databases lack information.",
+    ],
+    href: "https://pc-mymacros.netlify.app/",
+    playHref: "",
+    logo: "",
+    image: "./assets/projects/mymacros.png",
+    tags: [
+      {
+        id: 1,
+        name: "JavaScript",
+        path: "./assets/logos/javascript.svg",
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "./assets/logos/node.svg",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "./assets/logos/mongodb.svg",
+      },
+      {
+        id: 4,
+        name: "LLM",
+        path: "./assets/logos/LLM1.svg",
+      },
+    ],
+  },
+  {
+    id: 11,
+    title: "CricBros",
+    description:
+      "A mobile-first fantasy cricket web app with real-time scoring, private group competition, and live leaderboards powered by WebSocket communication.",
+    subDescription: [
+      "CricBros lets users create virtual cricket teams using real players and compete within private groups with live match updates.",
+      "Features real-time scoring via Socket.io, private group chat with admin roles, and live leaderboards that update instantly as matches unfold.",
+      "Built with a custom Node.js scraper for autonomous fantasy point calculation, optimized for sub-200ms latency through in-memory caching and parallelized database queries.",
+      "Full-stack architecture: React + Vite + Framer Motion frontend, Node.js + Express backend, MongoDB for persistence, and Socket.io for real-time events.",
+      "Authentication handled via Google OAuth and JWT, ensuring secure access across the platform.",
+    ],
+    href: "https://pc-cricbros-mob.netlify.app/",
+    playHref: "",
+    logo: "",
+    image: "./assets/projects/cricbros.jpg",
+    tags: [
+      {
+        id: 1,
+        name: "React",
+        path: "./assets/logos/react.svg",
+      },
+      {
+        id: 2,
+        name: "Node.js",
+        path: "./assets/logos/node.svg",
+      },
+      {
+        id: 3,
+        name: "MongoDB",
+        path: "./assets/logos/mongodb.svg",
+      },
+      {
+        id: 4,
+        name: "Socket.io",
+        path: "./assets/logos/socketio.svg",
+      },
+    ],
+  },
+  {
     id: 6,
     title: "StockAI",
     description:
