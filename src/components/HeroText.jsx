@@ -2,7 +2,7 @@ import { FlipWords } from "./FlipWords";
 import { motion } from "motion/react";
 
 const HeroText = () => {
-  const words = ["Data Science", "Machine Learning", "Web Designing"];
+  const words = ["Data Science", "Machine Learning", "Agentic AI Frameworks"];
   const wordsmob = ["Data\nScience", "Machine\nLearning", "Web\nDesigning"];
   const variants = {
     hidden: { opacity: 0, x: -50 },
