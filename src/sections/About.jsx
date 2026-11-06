@@ -1,11 +1,13 @@
-import { useRef } from "react";
+import { useCallback, useRef, useState } from "react";
 import Card from "../components/Card";
 import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/FrameWorks";
+import { Frameworks, TechNote } from "../components/Frameworks";
 
 const About = () => {
   const grid2Container = useRef();
+  const [selectedTech, setSelectedTech] = useState(null);
+  const closeTech = useCallback(() => setSelectedTech(null), []);
   return (
     <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
@@ -94,8 +96,9 @@ const About = () => {
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
-            <Frameworks />
+            <Frameworks selected={selectedTech} onSelect={setSelectedTech} />
           </div>
+          <TechNote skill={selectedTech} onClose={closeTech} />
         </div>
         {/* Grid 3 */}
         <div className="grid-dark-color grid-3">

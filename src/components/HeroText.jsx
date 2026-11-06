@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const HeroText = () => {
   const words = ["Data Science", "Machine Learning", "Agentic AI Frameworks"];
-  const wordsmob = ["Data\nScience", "Machine\nLearning", "Web\nDesigning"];
+  const wordsmob = ["Data\nScience", "Machine\nLearning", "Agentic\nAI\nFrameworks"];
   const variants = {
     hidden: { opacity: 0, x: -50 },
     visible: { opacity: 1, x: 0 },
@@ -82,7 +82,7 @@ const HeroText = () => {
           >
             <FlipWords
               words={wordsmob}
-              className="font-bold text-neutral-800 text-7xl text-center whitespace-pre-line"
+              className="font-bold text-neutral-800 text-6xl sm:text-7xl text-center whitespace-pre-line"
             />
           </motion.div>
           <motion.p

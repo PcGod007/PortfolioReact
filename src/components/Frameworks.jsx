@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 import { OrbitingCircles } from "./OrbitingCircles";
 
 const techNotes = {
@@ -102,9 +103,8 @@ const techNotes = {
 
 const skills = Object.keys(techNotes);
 
-export function Frameworks() {
+export function Frameworks({ selected, onSelect }) {
   const [paused, setPaused] = useState(false);
-  const [selected, setSelected] = useState(null);
 
   const renderIcon = (skill) => (
     <Icon
@@ -112,7 +112,7 @@ export function Frameworks() {
       skill={skill}
       active={selected === skill}
       onHover={setPaused}
-      onSelect={() => setSelected((prev) => (prev === skill ? null : skill))}
+      onSelect={() => onSelect(selected === skill ? null : skill)}
     />
   );
 
@@ -132,34 +132,54 @@ export function Frameworks() {
         {skills.slice().reverse().map(renderIcon)}
       </OrbitingCircles>
 
-      {selected && (
-        <div className="absolute bottom-6 right-[105%] z-20 w-60 rounded-xl border border-white/20 bg-midnight/90 p-3 text-left backdrop-blur">
+    </div>
+  );
+}
+
+export const TechNote = ({ skill, onClose }) => {
+  useEffect(() => {
+    if (!skill) return;
+    const timer = setTimeout(onClose, 10000);
+    return () => clearTimeout(timer);
+  }, [skill, onClose]);
+
+  return (
+    <AnimatePresence mode="wait">
+      {skill && (
+        <motion.div
+          key={skill}
+          initial={{ opacity: 0, y: 12, scale: 0.96 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 12, scale: 0.96 }}
+          transition={{ duration: 0.25, ease: "easeOut" }}
+          className="absolute bottom-6 left-6 z-20 w-[34%] min-w-52 max-w-sm rounded-xl bg-[#06091f]/80 p-3 backdrop-blur md:p-4"
+        >
           <div className="flex items-center gap-2">
             <img
-              src={`assets/logos/${selected}.svg`}
+              src={`assets/logos/${skill}.svg`}
               alt=""
-              className="size-6"
+              className="size-6 object-contain"
             />
-            <p className="text-sm font-semibold text-white">
-              {techNotes[selected].name}
+            <p className="text-base font-semibold text-white md:text-lg">
+              {techNotes[skill].name}
             </p>
             <button
               type="button"
               aria-label="Close"
-              onClick={() => setSelected(null)}
+              onClick={onClose}
               className="ml-auto text-neutral-400 hover:text-white"
             >
               ✕
             </button>
           </div>
-          <p className="mt-2 text-xs leading-snug text-neutral-300">
-            {techNotes[selected].note}
+          <p className="mt-2 text-xs text-neutral-300 md:text-sm">
+            {techNotes[skill].note}
           </p>
-        </div>
+        </motion.div>
       )}
-    </div>
+    </AnimatePresence>
   );
-}
+};
 
 const Icon = ({ skill, active, onHover, onSelect }) => (
   <button
@@ -172,6 +192,10 @@ const Icon = ({ skill, active, onHover, onSelect }) => (
       active ? "scale-125 drop-shadow-[0_0_6px_rgba(255,255,255,0.8)]" : ""
     }`}
   >
-    <img src={`assets/logos/${skill}.svg`} alt="" className="size-full" />
+    <img
+      src={`assets/logos/${skill}.svg`}
+      alt=""
+      className="size-full object-contain"
+    />
   </button>
 );
