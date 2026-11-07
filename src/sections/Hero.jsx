@@ -8,14 +8,14 @@ const Hero = () => {
 
   return (
     <section
-      className="relative w-full min-h-screen overflow-hidden z-10 flex flex-col md:flex-row items-center justify-between px-6 py-8 md:py-0"
+      className="relative w-full min-h-svh md:min-h-screen overflow-hidden z-10 flex flex-col md:flex-row items-center justify-start md:justify-between px-6 py-8 md:py-0"
       id="hero"
     >
       <ParallaxBackground />
       <HeroText />
 
       <div
-        className="flex-1 flex justify-center items-center md:justify-end mt-8 md:mt-0"
+        className="flex-1 flex justify-center items-center md:justify-end mt-4 md:mt-0"
         style={{
           width: isMobile ? "100%" : "50%",
           minHeight: isMobile ? "auto" : "100vh",

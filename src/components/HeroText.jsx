@@ -9,7 +9,7 @@ const HeroText = () => {
     visible: { opacity: 1, x: 0 },
   };
   return (
-    <div className="z-10 mt-20 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
+    <div className="z-10 mt-8 text-center md:mt-40 md:text-left rounded-3xl bg-clip-text">
       {/* Desktop View */}
       <div className="flex-col hidden md:flex c-space">
         <motion.h1
@@ -32,6 +32,7 @@ const HeroText = () => {
             A Developer <br /> Specializing in
           </motion.p>
           <motion.div
+            className="min-h-48"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -54,9 +55,9 @@ const HeroText = () => {
         </div>
       </div>
       {/* Mobile View */}
-      <div className="flex- flex-col space-y-6 md:hidden">
+      <div className="flex- flex-col space-y-2 sm:space-y-6 md:hidden">
         <motion.p
-          className="text-4xl font-medium text-neutral-800"
+          className="text-2xl sm:text-4xl font-medium text-neutral-800"
           variants={variants}
           initial="hidden"
           animate="visible"
@@ -66,7 +67,7 @@ const HeroText = () => {
         </motion.p>
         <div>
           <motion.p
-            className="text-5xl font-black text-neutral-700"
+            className="text-3xl sm:text-5xl font-black text-neutral-700"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -75,6 +76,7 @@ const HeroText = () => {
             A Developer <br /> Specializing in
           </motion.p>
           <motion.div
+            className="min-h-30 sm:min-h-54"
             variants={variants}
             initial="hidden"
             animate="visible"
@@ -82,7 +84,7 @@ const HeroText = () => {
           >
             <FlipWords
               words={wordsmob}
-              className="font-bold text-neutral-800 text-6xl sm:text-7xl text-center whitespace-pre-line"
+              className="font-bold text-neutral-800 text-4xl sm:text-7xl text-center whitespace-pre-line"
             />
           </motion.div>
           <motion.p

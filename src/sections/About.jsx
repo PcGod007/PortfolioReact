@@ -32,7 +32,7 @@ const About = () => {
             ref={grid2Container}
             className="flex items-center justify-center w-full h-full"
           >
-            <p className="flex items-end text-5xl text-gray-500 text-center">
+            <p className="flex items-end text-2xl md:text-5xl text-gray-500 text-center">
               while(!(succeed = try()));
             </p>
             <Card

@@ -22,8 +22,8 @@
 @media (max-width: 640px) {
   .blob-wrapper {
     margin: 0 auto;
-    width: 380px;
-    height: 380px;
+    width: min(72vw, 36svh, 380px);
+    height: min(72vw, 36svh, 380px);
   }
 }
 
@@ -31,8 +31,8 @@
 @media (max-width: 480px) {
   .blob-wrapper {
     margin: 0 auto;
-    width: 330px;
-    height: 330px;
+    width: min(72vw, 36svh, 330px);
+    height: min(72vw, 36svh, 330px);
   }
 }
 
