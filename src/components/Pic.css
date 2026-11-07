@@ -22,19 +22,11 @@
 @media (max-width: 640px) {
   .blob-wrapper {
     margin: 0 auto;
-    width: min(72vw, 36svh, 380px);
-    height: min(72vw, 36svh, 380px);
+    width: clamp(200px, calc(100svh - 340px), min(82vw, 380px));
+    height: clamp(200px, calc(100svh - 340px), min(82vw, 380px));
   }
 }
 
-/* Responsive fix for extra small phones */
-@media (max-width: 480px) {
-  .blob-wrapper {
-    margin: 0 auto;
-    width: min(72vw, 36svh, 330px);
-    height: min(72vw, 36svh, 330px);
-  }
-}
 
 .blob {
   width: 100%;
